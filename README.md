@@ -37,7 +37,7 @@ Imagine a \"Home Screen\" where a central floating orb acts as a Global AI Assis
         types.Content(
             role="model",
             parts=[
-                types.Part.from_text(text="""**Considering Antigravity's Scope**
+                types.Part.from_text(text="""**Considering UniGate's Scope**
 
 I'm focusing on Antigravity's role. It must address complex user needs, specifically within Google's ecosystem. My priorities are the Campus Life and Sandwich Generation use cases. I want to solve problems of financial insecurity, budgeting, and club management. Those are my initial goals, and I'm developing a scope for Antigravity's core features.
 
@@ -53,7 +53,7 @@ I'm now deep-diving into the implementation roadmap for Antigravity, specificall
 
 
 """),
-                types.Part.from_text(text="""This is a visionary architectural challenge. To build **Antigravity**, we aren't just building an app; we are building a **Cognitive Bridge** between the high-pressure environment of a technical university (UTeM) and the emotional weight of remote caregiving in Perak.
+                types.Part.from_text(text="""This is a visionary architectural challenge. To build **UniGate**, we aren't just building an app; we are building a **Cognitive Bridge** between the high-pressure environment of a technical university (UTeM) and the emotional weight of remote caregiving in Perak.
 
 As the Senior Product Architect, I am proposing the following **Google-First Technical Blueprint**.
 
