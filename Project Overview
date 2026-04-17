@@ -1,1 +1,47 @@
+📌 Project OverviewAntigravity is a "Split-Core" mobile application designed for Malaysian students studying away from home. It bridges the gap between Campus Survival (FinTech) and Remote Family Care (Healthcare).
+The Problem
+University students face high stress from strict daily budgets (RM15/day) and constant anxiety regarding the health of aging relatives in distant hometowns.
+The Solution
+A unified dashboard that uses Gemini Multimodal AI to manage food expenses and Vertex AI to monitor the vital signs of elderly family members remotely.
+✨ Key Features
+🏫 Campus Hub (FinTech)
+Gemini Vision Buffet Scanner: Instantly estimates "Nasi Campur" prices to prevent cashier shock.
+NFC Price Transparency: Tap-to-check real-time pricing for campus retailers using Firebase.
+🏠 Care Hub (Healthcare)
+Predictive Health Dashboard: Real-time monitoring of HR, SpO2, and Sleep via Google Cloud Healthcare API.
+AI Fall Detection: Vertex AI Agent logic for instant emergency alerts.
+Med-Liaison: Generative AI summaries that simplify complex medical reports into simple Malay/English/Mandarin.
+🛠️ Technical Stack
+Every component of Antigravity is built on the Google AI Ecosystem Stack:
+Frontend: Flutter (Material Design 3 / Material You)
+Intelligence: Gemini 1.5 Flash (Vision) & Gemini 1.5 Pro (Reasoning) 
+Orchestration: Vertex AI Agent Builder & Firebase Genkit 
+Infrastructure: Google Cloud Run (Serverless Deployment) 
+Database: Firestore & Vertex AI Search (RAG) 
+🏗️ Architectural Overview
+graph TD
+    A[Flutter App] --> B{Nexus Orb AI}
+    B --> C[Campus Hub: Gemini Vision]
+    B --> D[Care Hub: Vertex AI Agents]
+    C --> E[(Firebase Firestore)]
+    D --> F[Google Cloud Healthcare API]
+    E --> G[Cloud Run Backend]
+    F --> G
+⚙️ Setup Instructions
+Ensure you have a Google Cloud Project set up before proceeding.
 
+1. Prerequisites
+Flutter SDK (Latest version)
+Google Cloud CLI
+Gemini API Key (via Google AI Studio)
+2. Installation
+Clone the Repo:
+git clone https://github.com/your-username/antigravity.git
+cd antigravity
+Configure Environment Variables:
+Create a .env file in the root directory. Do not hardcode keys.
+GEMINI_API_KEY=your_key_here
+FIREBASE_PROJECT_ID=your_id
+Run the App:
+flutter pub get
+flutter run
